@@ -1,7 +1,8 @@
-import { Inter } from 'next/font/google'
-import './globals.css'
+import { Inter, Raleway } from 'next/font/google'
+import "funuicss/css/fun.css"
+import "@/assets/css/globals.css"
 
-const inter = Inter({ subsets: ['latin'] })
+const my_font = Raleway({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Create Next App',
@@ -11,7 +12,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body className={my_font.className}>{children}</body>
     </html>
   )
 }
